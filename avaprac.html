@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .btn1{
+        background-color: yellow;
+        color: black;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    .btn2{
+        background-color: rgb(41, 154, 188);
+        color: black;
+        padding: 5px;
+        border-radius: 4px;
+    }
+
+    .btn1:hover{
+        background-color: black;
+        color: yellow;
+        font-style: bold;
+    }
+    .btn2:hover{
+        background-color: black;
+        color: rgb(41, 154, 188);
+        font-style: bold;
+    }
+</style>
+</head>
+<body>
+    <p id="para">ParaGraph</p>
+    <button class="btn1" onclick="document.getElementById('para').innerHTML = 'New Text'">Click Me 1</button>
+    <button class="btn2" onclick="document.getElementById('para').innerHTML = 'ParaGraph'">Click Me 2</button>
+</body>
+</html>
