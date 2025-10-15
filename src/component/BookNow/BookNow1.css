@@ -1,0 +1,214 @@
+.booknow-wrapper {
+  width: 100%;
+  padding: 60px 5%;
+  background: linear-gradient(135deg, #a6e4ce, #f5eeee);
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.booknow-container {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 3%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booknow-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.booknow-container h2 {
+  font-size: 38px;
+  color: #096b3d;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.booknow-container p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+/* Toggle Buttons */
+.toggle-type {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.toggle-type button {
+  padding: 12px 28px;
+  border: none;
+  background: #e0e0e0;
+  color: #333;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.toggle-type button.active {
+  background: #096b3d;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.toggle-type button:hover {
+  background: #0bbf72;
+  color: #fff;
+}
+
+/* Form Layout */
+.booking-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 10px 0 6px;
+  color: #333;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background: #fafafa;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+select:focus,
+input:focus {
+  border: 1px solid #096b3d;
+  outline: none;
+  box-shadow: 0 0 6px rgba(9,107,61,0.3);
+}
+
+/* Checkbox Group */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.checkbox-group label {
+  font-size: 15px;
+  color: #444;
+  cursor: pointer;
+}
+
+/* Package Details */
+.package-details {
+  grid-column: span 2;
+  margin-top: 20px;
+  padding: 20px;
+  background: #f6fff9;
+  border-radius: 12px;
+  border: 1px solid #a5d6a7;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.package-details h3 {
+  color: #096b3d;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #096b3d;
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* Buttons */
+.add-stop,
+.calculate,
+.btn-book {
+  padding: 12px 20px;
+  border: none;
+  background: #096b3d;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.add-stop:hover,
+.calculate:hover,
+.btn-book:hover {
+  background: #0bbf72;
+  transform: translateY(-2px);
+}
+
+/* Confirm Book Button Full Width */
+.btn-book {
+  grid-column: span 2;
+  width: 100%;
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .booking-form {
+    grid-template-columns: 1fr;
+  }
+  .package-details,
+  .btn-book {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .booknow-container {
+    padding: 20px;
+  }
+
+  .booknow-container h2 {
+    font-size: 28px;
+  }
+
+  .booknow-container p {
+    font-size: 15px;
+  }
+
+  .toggle-type button {
+    width: 100%;
+  }
+
+  select,
+  input {
+    font-size: 14px;
+  }
+
+  .btn-book {
+    font-size: 16px;
+  }
+}
