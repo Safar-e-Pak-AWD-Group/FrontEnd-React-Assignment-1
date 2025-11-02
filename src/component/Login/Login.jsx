@@ -23,7 +23,7 @@ function Login() {
     if (token) navigate("/home");
   }, [navigate]);
 
-  // ✅ Handle change with live validation
+  //  Handle change with live validation
   const handleChange = (e) => {
     const { name, value } = e.target;
     const cleanValue = sanitizeInput(value);
@@ -37,7 +37,7 @@ function Login() {
     setErrors(newErrors);
   };
 
-  // ✅ Handle form submission
+  //  Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     setMessage("");
@@ -136,3 +136,4 @@ function Login() {
 }
 
 export default Login;
+
