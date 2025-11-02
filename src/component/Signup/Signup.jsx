@@ -6,7 +6,7 @@ import {
   validateEmail,
   validatePassword,
   validateConfirmPassword,
-} from "../../utils/sanitize"; // ✅ Import from one place
+} from "../../utils/sanitize";
 import "./Signup.css";
 
 function Signup() {
@@ -133,3 +133,4 @@ function Signup() {
 }
 
 export default Signup;
+
