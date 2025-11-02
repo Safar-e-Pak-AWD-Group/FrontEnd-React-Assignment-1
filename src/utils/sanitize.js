@@ -21,7 +21,7 @@ export const validateEmail = (email) => {
   return "";
 };
 
-// ✅ Validate password strength
+//  Validate password strength
 export const validatePassword = (password) => {
   if (!password) return "Password is required.";
   if (password.length < 8)
@@ -37,8 +37,9 @@ export const validatePassword = (password) => {
   return "";
 };
 
-// ✅ Confirm password check
+//  Confirm password check
 export const validateConfirmPassword = (password, confirmPassword) => {
   if (password !== confirmPassword) return "Passwords do not match.";
   return "";
 };
+
